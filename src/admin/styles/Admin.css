@@ -994,3 +994,356 @@ textarea {
         width: 100%;
     }
 }
+
+/* =========================================
+   RECEPTION DEPARTMENT OVERVIEW
+========================================= */
+
+.reception-overview {
+    margin-top: 25px;
+}
+
+.reception-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.reception-heading h3 {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.reception-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.reception-refresh-btn,
+.reception-back-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.reception-refresh-btn {
+    background: #eff6ff;
+    color: #2563eb;
+    border: 1px solid #bfdbfe;
+}
+
+.reception-refresh-btn:hover {
+    background: #dbeafe;
+}
+
+.reception-back-btn {
+    background: #2563eb;
+    color: #fff;
+    border: 1px solid #2563eb;
+}
+
+.reception-back-btn:hover {
+    background: #1d4ed8;
+}
+
+/* Reception Statistics */
+
+.reception-stats {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+/* Department Card View Link */
+
+.department-view-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 12px;
+    color: #64748b;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.department-card[role="button"]:hover {
+    border-color: #2563eb;
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.10);
+    transform: translateY(-2px);
+    transition: 0.2s ease;
+}
+
+.department-card[role="button"]:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 3px;
+}
+
+/* Patients and Appointments Tabs */
+
+.reception-tabs {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 25px 0 18px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #e5e7eb;
+    flex-wrap: wrap;
+}
+
+.reception-tab {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 12px 20px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    color: #475569;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.reception-tab:hover {
+    background: #eff6ff;
+    color: #2563eb;
+    border-color: #bfdbfe;
+}
+
+.reception-tab.active {
+    background: #2563eb;
+    border-color: #2563eb;
+    color: #fff;
+}
+
+.reception-tab-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 23px;
+    height: 23px;
+    padding: 0 7px;
+    border-radius: 20px;
+    background: #eff6ff;
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.reception-tab.active .reception-tab-count {
+    background: #fff;
+    color: #2563eb;
+}
+
+/* Search Bar */
+
+.reception-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 450px;
+    padding: 0 14px;
+    margin: 20px 0;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background: #fff;
+    color: #64748b;
+}
+
+.reception-search:focus-within {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.reception-search input {
+    width: 100%;
+    height: 43px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #1e293b;
+    font-size: 13px;
+}
+
+.reception-search input::placeholder {
+    color: #94a3b8;
+}
+
+/* Reception Content */
+
+.reception-content {
+    margin-top: 20px;
+}
+
+.reception-total-label {
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 12px;
+    border-radius: 20px;
+    background: #eff6ff;
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Reception Tables */
+
+.reception-content .table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.reception-content .admin-table {
+    width: 100%;
+    min-width: 850px;
+    border-collapse: collapse;
+}
+
+.reception-content .admin-table th {
+    background: #f8fafc;
+    color: #475569;
+    white-space: nowrap;
+    padding: 14px 12px;
+    text-align: left;
+}
+
+.reception-content .admin-table td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #475569;
+    white-space: nowrap;
+}
+
+.reception-content .admin-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .reception-heading {
+        align-items: flex-start;
+    }
+
+    .reception-header-actions {
+        width: 100%;
+    }
+
+    .reception-tabs {
+        gap: 8px;
+    }
+
+    .reception-tab {
+        padding: 10px 13px;
+        font-size: 12px;
+    }
+
+    .reception-search {
+        max-width: 100%;
+    }
+
+    .reception-stats {
+        margin-top: 15px;
+    }
+}
+
+/* User Management Search */
+.user-search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.user-search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 480px;
+    min-height: 44px;
+    padding: 0 13px;
+    border: 1px solid #d8dee8;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #64748b;
+}
+
+.user-search-box:focus-within {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+.user-search-box input {
+    flex: 1;
+    width: 100%;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #1e293b;
+    font-size: 14px;
+}
+
+.user-search-box input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.user-search-clear {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    color: #64748b;
+    cursor: pointer;
+}
+
+.user-search-count {
+    color: #64748b;
+    font-size: 13px;
+}
+
+.status-active {
+    color: #15803d;
+    background: #dcfce7;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status-inactive {
+    color: #b91c1c;
+    background: #fee2e2;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+@media (max-width: 600px) {
+    .user-search-box {
+        max-width: 100%;
+    }
+
+    .user-search-count {
+        width: 100%;
+    }
+}

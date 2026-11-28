@@ -18,7 +18,7 @@ const menuItems = [
     { name: "Departments", path: "/admin/departments", icon: Building2 },
     { name: "Doctors", path: "/admin/doctors", icon: Stethoscope },
     { name: "Users", path: "/admin/users", icon: Users },
-    { name: "Roles & Permissions", path: "/admin/roles", icon: ShieldCheck },
+
     { name: "Reports", path: "/admin/reports", icon: FileText },
     { name: "Settings", path: "/admin/settings", icon: Settings },
 ];
